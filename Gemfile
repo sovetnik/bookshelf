@@ -7,6 +7,10 @@ gem 'hanami-model', '~> 0.7'
 
 gem 'pg'
 
+gem 'slim'
+gem 'hanami-bootstrap'
+gem 'jquery-hanami'
+
 group :development do
   # Code reloading
   # See: http://hanamirb.org/guides/projects/code-reloading

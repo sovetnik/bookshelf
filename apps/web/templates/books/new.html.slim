@@ -1,0 +1,22 @@
+h2
+  'Add book
+
+- unless params.valid?
+  .errors
+    h3
+      'There was a problem with your submission
+    ul
+      - params.error_messages.each do |message|
+        li = message
+
+= form_for :book, routes.books_path do
+  - div class: 'input' do
+    - label      :title
+    - text_field :title
+
+  - div class: 'input' do
+    - label      :author
+    - text_field :author
+
+  - div class: 'controls' do
+    - submit 'Create Book'
